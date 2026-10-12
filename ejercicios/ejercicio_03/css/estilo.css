@@ -1,0 +1,82 @@
+:root {
+    --color_primario: #11cd82;
+    --color-secundario: #D9DEE5;
+    --color-de-fondo: #4A5A73;
+    --color-4: #1E2D44;
+    --color-5: #B08D57;
+}
+
+/* 1. Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Selector de Tipo (etiqueta de html) */
+body {
+    background-color: var(--color-secundario);
+}
+
+nav {
+    background-color: var(--color_primario);
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--color_primario);
+    font-size: 2rem;
+    margin: 8vh 0 1rem 5%;
+}
+
+label {
+    color: var(--color_primario);
+    font-size: 1.1rem;
+}
+
+input {
+    background-color: var(--color-de-fondo);
+    color: #F2EFEA;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: var(--color-5);
+    cursor: pointer;
+}
+
+/* 3. Selector de clase (prefijo .) es reutilizable */
+.formulario {
+    line-height: 1.6;
+    margin: 0 5%; 
+}
+
+/* 4. Selector de ID, aplica para un solo elemento */
+#recuperar {
+    color: var(--color-4);
+    font-size: 0.9rem;
+}
+
+#btn_entrar {
+    background-color: var(--color_primario);
+    color: #F2EFEA;
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+}
+
+/* 5. Selector descendiente, a las etiquetas "p" dentro de un "nav" */
+nav p {
+    color: #F2EFEA;
+    font-size: 1.5rem;
+}
+
+/*
+Unidades de medida usadas:
+px  -> bordes redondeados
+rem -> tamaños de letra y espacios
+%   -> márgenes de los lados
+vh  -> espacio de arriba del título
+*/

@@ -1,0 +1,84 @@
+:root {
+    --color_primario: #1F2419;
+    --color-secundario: #C9C5B9;
+    --color-de-fondo: #6B7058;
+    --color-4: #3B4232;
+    --color-5: #8A8F6E;
+}
+
+#mi_boton {
+    background-color: var(--color-de-fondo);/*Color de fondo*/
+    color:rgb(22, 21, 22);/*color del texto*/
+    font-size: 16px;
+    border-radius: 8px;
+}
+button:hover {
+    background-color: grey;
+    cursor: pointer;
+    color:rgb(180, 214, 234);
+    font-size: 16px;
+}
+
+#mi_boton2 {
+    background-color:grey;
+    color:rgb(23, 23, 23);/*Color del texto*/
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+button {
+    background-color:rgb(214, 186, 225);
+    color:rgb(24, 23, 23);
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/*1. Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*2. Selector de Tipo (etiqueta de html) */
+p {
+    line-height: 1.6;
+    color: rgb(95, 169, 234);
+    background-color: #000;
+    margin: 30px;
+}
+
+/*3. Selector de clsae (prefijo .)es reutilizable */
+.destacado {
+    background-color: blueviolet;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px -1px rgba(123,0,0,1);
+    border: 2px;
+    padding: 12px;
+    padding: top 50vh;
+}
+
+/*4. Selector de ID, aplica para un solo elemento */
+#parrafo_1 {
+    background-color: azure;
+}
+
+/*5. Selector descendiente, a las etiquetas "p" de un "nav" */
+nav p{
+    font-size: 16px;
+    color:blanchedalmond;
+}
+
+/*
+Unidades de medida
+
+1. px (Píxeles): Medida absoluta fija. Recomendada para bordes.
+
+2. rem (Root EM): Medida relativa al tamaño de fuente del navegador.
+            1rem = 16px
+
+3. % (Porcentaje): Relativo al tamaño de la caja del padre.
+
+4. vw /vh (Viewport width/height): Relativo a la pantalla
+            100vh = 100% de la altura visible del monitor.
+*/
