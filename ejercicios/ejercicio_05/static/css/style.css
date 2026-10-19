@@ -1,0 +1,72 @@
+:root {
+    --color-primario: #21221f;
+    --color-secundario: #f7f7f7;
+    --color-de-fondo: #dde4be;
+    --color-4: #3B4232;
+    --color-5: #93938f;
+}
+
+/* 1. Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Selector de tipo */
+body {
+    background-color: var(--color-de-fondo);
+}
+
+h1 {
+    color: var(--color-secundario);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* 3. Selector de clase: la calculadora */
+.calculadora {
+    margin: 20px;
+}
+
+/* 5. Selector descendiente: labels e inputs dentro de .calculadora */
+.calculadora label {
+    color: var(--color-secundario);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.calculadora input {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* 4. Selector de ID: la etiqueta "Resultado" en rojo como en el pizarrón */
+#etiqueta_resultado {
+    color: rgb(235, 227, 227);
+}
+
+#resultado {
+    background-color: var(--color-5);
+}
+
+/* Botones */
+button {
+    background-color: var(--color-4);
+    color: var(--color-secundario);
+    font-size: 1.2rem;
+    padding: 10px 18px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: var(--color-5);
+    color: var(--color-primario);
+    cursor: pointer;
+}
